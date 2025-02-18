@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_character.c                               :+:      :+:    :+:   */
+/*   ft_print_percent.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mstefano <mstefano@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/04 15:32:46 by mstefano          #+#    #+#             */
-/*   Updated: 2023/11/17 19:31:06 by mstefano         ###   ########.fr       */
+/*   Created: 2023/11/07 22:32:03 by mstefano          #+#    #+#             */
+/*   Updated: 2025/02/18 16:02:34 by mstefano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../includes/ft_printf.h"
 
-int	ft_print_character(int c)
+int	ft_print_percent(void)
 {
-	if (write (1, &c, 1) < 0)
+	if (write(1, "%", 1) != 1)
 		return (-1);
 	return (1);
 }
